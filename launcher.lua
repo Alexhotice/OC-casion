@@ -2,7 +2,7 @@ local gpu = require("component").gpu
 local computer = require("computer")
 local term = require("term")
 event = require("event")
-local admins = { "Durex77", "krovyaka", "krovyak", "GoodGame", "GooodGame", "SkyDrive_" }
+local admins = { "Alexhotice", "aceman129" }
 local shell = require("shell")
 
 if not require("filesystem").exists("/lib/durexdb.lua") then
@@ -22,7 +22,7 @@ end
 
 function updateFromGitHub()
     local app = loadfile("/home/appInfo.lua")()
-    shell.execute("wget -fq https://raw.githubusercontent.com/alexhotice/OC-casino/" .. app.branch .. "/tree/master/apps/" .. app.name .. ".lua /home/app.lua")
+    shell.execute("wget -fq https://raw.githubusercontent.com/alexhotice/OC-casino/" .. app.branch .. "/master/apps/" .. app.name .. ".lua /home/app.lua")
 end
 
 local function hideToken(s)
