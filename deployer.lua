@@ -132,7 +132,7 @@ local function deploy()
     print('Application successfully deployed.')
 end
 
-print("MCSkill Casino Deployer 1.1\n")
+print("Shadowcraft Casino Deployer 1.1\n")
 setupSettings()
 deploy()
 print("Press ENTER to restart...")
