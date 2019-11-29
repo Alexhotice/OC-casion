@@ -92,14 +92,14 @@ end
 
 local function saveLauncher()
     print("Launcher saving begins...")
-    shell.execute("wget -fq https://raw.githubusercontent.com/alexhotice/OpenComputers-Casino/" .. SETTINGS.branch .. "/launcher.lua /home/1")
+    shell.execute("wget -fq https://raw.githubusercontent.com/alexhotice/OC-casion/" .. SETTINGS.branch .. "/launcher.lua /home/1")
     print("Launcher is saved")
 end
 
 local function saveApplication()
     print("Application saving begins...")
     shell.execute(string.format(
-            "wget -fq https://raw.githubusercontent.com/alexhotice/OpenComputers-Casino/%s/apps/%s.lua /home/app.lua",
+            "wget -fq https://raw.githubusercontent.com/alexhotice/OC-casion/%s/apps/%s.lua /home/app.lua",
             SETTINGS.branch,
             SETTINGS.application
     ))
