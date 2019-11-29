@@ -99,7 +99,7 @@ end
 local function saveApplication()
     print("Application saving begins...")
     shell.execute(string.format(
-            "wget -fq https://raw.githubusercontent.com/alexhotice/OC-casion/master/apps/.lua /home/app.lua",
+            "wget -fq https://raw.githubusercontent.com/alexhotice/OC-casion/master/%s/apps/%s.lua /home/app.lua",
             SETTINGS.branch,
             SETTINGS.application
     ))
