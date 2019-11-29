@@ -92,7 +92,7 @@ end
 
 local function saveLauncher()
     print("Launcher saving begins...")
-    shell.execute("wget -fq https://raw.githubusercontent.com/alexhotice/OC-casion/" .. SETTINGS.branch .. "/launcher.lua /home/1")
+    shell.execute("wget -fq https://raw.githubusercontent.com/alexhotice/OC-casion/master/launcher.lua /home/1")
     print("Launcher is saved")
 end
 
