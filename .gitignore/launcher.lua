@@ -22,7 +22,7 @@ end
 
 function updateFromGitHub()
     local app = loadfile("/home/appInfo.lua")()
-    shell.execute("wget -fq https://raw.githubusercontent.com/alexhotice/OCcasion/master/" .. app.branch .. "/apps/" .. app.name .. ".lua /home/app.lua")
+    shell.execute("wget -fq https://raw.githubusercontent.com/alexhotice/OCcasion/master/" .. app.branch .. app.name .. ".lua /home/app.lua")
 end
 
 local function hideToken(s)
